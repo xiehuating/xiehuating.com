@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Animation 01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../logo.svg" rel="shortcut icon">
+
+    <style>
+      div {
+        margin: 0;
+        padding: 0;
+      }
+        
+      .container {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        -webkit-perspective: 150;
+        -moz-perspective: 150;
+        perspective: 150;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;      
+      }
+        
+      .part1 {
+        margin: 0 auto;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background-color:transparent;
+        border-width: 10px ;
+        border-color: #90A4AE;
+        border-style: solid;
+        z-index:100;
+        -webkit-animation: part1Animation 7s ease-in-out 0ms infinite alternate none running;
+      }
+        
+      @-webkit-keyframes part1Animation {
+        0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+        4% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+
+        24% {-webkit-transform: rotateX(180deg) rotateY(0deg);}
+        28% {-webkit-transform: rotateX(180deg) rotateY(0deg);}
+
+        48% {-webkit-transform: rotateX(180deg) rotateY(180deg);}
+        52% {-webkit-transform: rotateX(180deg) rotateY(180deg);}
+
+        72% {-webkit-transform: rotateX(0deg) rotateY(180deg);}
+        76% {-webkit-transform: rotateX(0deg) rotateY(180deg);}
+
+        96% {-webkit-transform: rotateX(0deg) rotateY(360deg);}
+        100% {-webkit-transform: rotateX(0deg) rotateY(360deg);}
+      }
+        
+      .part2 {
+        position: absolute;
+        margin: 0 auto;
+        left: 20px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color:transparent;
+        border-width: 10px ;
+        border-color: #546E7A;
+        border-style: solid;
+        z-index: 99;
+        -webkit-animation: part2Animation 7s ease-in-out 200ms infinite alternate none running;
+      }
+        
+      @-webkit-keyframes part2Animation {
+        0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+        4% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+
+        24% {-webkit-transform: rotateX(180deg) rotateY(0deg);}
+        28% {-webkit-transform: rotateX(180deg) rotateY(0deg);}
+
+        48% {-webkit-transform: rotateX(180deg) rotateY(180deg);}
+        52% {-webkit-transform: rotateX(180deg) rotateY(180deg);}
+
+        72% {-webkit-transform: rotateX(0deg) rotateY(180deg);}
+        76% {-webkit-transform: rotateX(0deg) rotateY(180deg);}
+
+        96% {-webkit-transform: rotateX(0deg) rotateY(360deg);}
+        100% {-webkit-transform: rotateX(0deg) rotateY(360deg);}
+      }
+        
+      .part3 {
+        position: absolute;
+        margin: 0 auto;
+        top: 40px;
+        left: 40px;
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        background-color: #263238;
+        border-width: 0px ;
+        border-color: #263238;
+        border-style: solid;
+        z-index: 98;
+        -webkit-animation: part3Animation 7s ease-in-out 500ms infinite alternate none running;
+      }
+        
+      @-webkit-keyframes part3Animation {
+        0% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+        4% {-webkit-transform: rotateX(0deg) rotateY(0deg);}
+
+        24% {-webkit-transform: rotateX(180deg) rotateY(0deg);}
+        28% {-webkit-transform: rotateX(180deg) rotateY(0deg);}
+
+        48% {-webkit-transform: rotateX(180deg) rotateY(180deg);}
+        52% {-webkit-transform: rotateX(180deg) rotateY(180deg);}
+
+        72% {-webkit-transform: rotateX(0deg) rotateY(180deg);}
+        76% {-webkit-transform: rotateX(0deg) rotateY(180deg);}
+
+        96% {-webkit-transform: rotateX(0deg) rotateY(360deg);}
+        100% {-webkit-transform: rotateX(0deg) rotateY(360deg);}
+      }
+
+    </style>
+  </head>
+  
+  	
+  <body>
+    <div class="container">
+        
+        <div class="part1" >  
+          </div>
+        <div class="part2" >  
+          </div>
+        <div class="part3" >  
+          </div>
+    
+    </div>
+    
+    
+  </body>
+</html>

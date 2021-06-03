@@ -15,7 +15,7 @@
       .container {
         width: 100px;
         height: 100px;
-        background-colo: transparent;
+        background-color: transparent;
         -webkit-perspective: 150;
         -moz-perspective: 150;
         perspective: 150;
@@ -38,15 +38,14 @@
         border-color: #90A4AE;
         border-style: solid;
         z-index:100;
-        -webkit-animation: part1Animation 7s ease-in-out 0s infinite alternate none running;
+        -webkit-animation: part1Animation 3.5s ease-in-out 0s infinite alternate-reverse none running;
       }
         
       @-webkit-keyframes part1Animation {
         0% {-webkit-transform: rotateX(0deg);}
-        35% {-webkit-transform: rotateX(180deg);}
-        50% {-webkit-transform: rotateX(180deg);}
-        85% {-webkit-transform: rotateX(360deg);}
-        100% {-webkit-transform: rotateX(360deg);}
+        16% {-webkit-transform: rotateX(0deg);}
+        84% {-webkit-transform: rotateX(180deg);}
+        100% {-webkit-transform: rotateX(180deg);}
       }
         
       .part2 {
@@ -62,15 +61,14 @@
         border-color: #546E7A;
         border-style: solid;
         z-index: 99;
-        -webkit-animation: part2Animation 7s ease-in-out 400ms infinite alternate none running;
+        -webkit-animation: part2Animation 3.5s ease-in-out 400ms infinite alternate-reverse none running;
       }
         
       @-webkit-keyframes part2Animation {
         0% {-webkit-transform: rotateX(0deg);}
-        35% {-webkit-transform: rotateX(180deg);}
-        50% {-webkit-transform: rotateX(180deg);}
-        85% {-webkit-transform: rotateX(360deg);}
-        100% {-webkit-transform: rotateX(360deg);}
+        16% {-webkit-transform: rotateX(0deg);}
+        84% {-webkit-transform: rotateX(180deg);}
+        100% {-webkit-transform: rotateX(180deg);}
       }
         
       .part3 {
@@ -86,15 +84,14 @@
         border-color: #263238;
         border-style: solid;
         z-index: 98;
-        -webkit-animation: part3Animation 7s ease-in-out 1000ms infinite alternate none running;
+        -webkit-animation: part3Animation 3.5s ease-in-out 900ms infinite alternate-reverse none running;
       }
         
       @-webkit-keyframes part3Animation {
         0% {-webkit-transform: rotateX(0deg);}
-        35% {-webkit-transform: rotateX(180deg);}
-        50% {-webkit-transform: rotateX(180deg);}
-        85% {-webkit-transform: rotateX(360deg);}
-        100% {-webkit-transform: rotateX(360deg);}
+        16% {-webkit-transform: rotateX(0deg);}
+        84% {-webkit-transform: rotateX(180deg);}
+        100% {-webkit-transform: rotateX(180deg);}
       }
 
     </style>
