@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="vavaga_logo.png">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Vavaga.com|html,css,js for ux</title>
+  
+    <style>
+        div, body, h1, h2, span{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .text {
+            color: #333333;
+            font-family: Helvetica, sans-serif;
+            font-size: 14px;
+            width: 200px;
+            text-align: center;
+            font-weight: 200;
+            margin: 60px auto 20px auto;
+        }
+		
+		.linkText {
+            margin: 20px auto 20px auto;
+        }
+		
+		.text > .link {
+            color: #666666;
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+            text-align: center;
+			text-decoration: none;
+        }
+            
+        .title {
+            color: #333333;
+            font-family: Helvetica, sans-serif;
+            line-height: 30px;
+            font-size: 18px;
+            width: 360px;
+            text-align: center;
+            font-weight: 200;
+            margin: 60px auto 20px auto;
+        }    
+
+        .title2 {
+            color: #333333;
+            font-family: Helvetica, sans-serif;
+            font-size: 20px;
+            width: 102px;
+            font-weight: 200;
+            margin: 40px auto 16px auto;
+        }
+
+        .title2 h2
+        {
+            color: #333333;
+            font-family: Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        .title2 h2 span{ 
+            display: inline-block;   
+            width:20px;
+            overflow: hidden;
+            -webkit-animation: upcomingAnimation 3s steps(4) infinite;
+            animation: upcomingAnimation 3s steps(4) infinite;
+        }
+          
+        @-webkit-keyframes upcomingAnimation
+        {
+            from {width: 0;}
+        }
+        @keyframes upcomingAnimation
+        {
+            from {width: 0;}
+        }
+
+        .title b{
+            font-variant:small-caps;
+            font-weight:100;
+            font-size: 20px;
+
+        } 
+            
+        .container{
+          position:relative;
+          margin: 16px auto 40px auto;
+          width: 100px;
+          height: 100px;
+          background-color:#ffffff;
+          position:relative;
+          
+          -webkit-perspective: 150; 
+          
+        }
+         
+            
+        .part1{
+            margin: 0 auto;
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background-color:transparent;
+            border-width: 10px ;
+            border-color: #30a9dc;
+            border-style: solid;
+            /* box-shadow: 0px 0px 2px #30a9dc, 0px 0px 1px #30a9dc inset; */
+                z-index:100;
+            -webkit-animation: part1Animation 16s ease-in-out infinite;
+        }
+            
+            @-webkit-keyframes part1Animation
+            {
+                0% {-webkit-transform: rotateX(0deg);}
+                18% {-webkit-transform: rotateX(180deg);}
+                25% {-webkit-transform: rotateX(180deg);}
+                43% {-webkit-transform: rotateX(0deg);}
+                50% {-webkit-transform: rotateX(0deg);}
+                51% {-webkit-transform: rotateY(0deg);}
+                68% {-webkit-transform: rotateY(180deg);}
+                75% {-webkit-transform: rotateY(180deg);}
+                93% {-webkit-transform: rotateY(0deg);}
+                100% {-webkit-transform: rotateY(0deg);}
+              
+            }
+            
+            .part2{
+            position: absolute;
+                margin: 0 auto;
+                left: 20px;
+                top: 20px;
+            width: 40px;
+            height: 40px;
+                border-radius: 10px;
+            background-color:transparent;
+            border-width: 10px ;
+            border-color: #30a9dc;
+            border-style: solid;
+            /*box-shadow: 0px 0px 2px #30a9dc, 0px 0px 1px #30a9dc inset;*/
+                z-index: 99;
+            -webkit-animation: part2Animation 16s ease-in-out infinite;
+            
+        }
+            
+            @-webkit-keyframes part2Animation
+            {
+                0% {-webkit-transform: rotateY(0deg);}
+                18% {-webkit-transform: rotateY(180deg);}
+                25% {-webkit-transform: rotateY(180deg);}
+                43% {-webkit-transform: rotateY(0deg);}
+                50% {-webkit-transform: rotateY(0deg);}
+                51% {-webkit-transform: rotateX(0deg);}
+                68% {-webkit-transform: rotateX(180deg);}
+                75% {-webkit-transform: rotateX(180deg);}
+                93% {-webkit-transform: rotateX(0deg);}
+                100% {-webkit-transform: rotateX(0deg);}
+            }
+            
+            .part3{
+            position: absolute;
+                margin: 0 auto;
+            top: 40px;
+            left: 40px;
+            width: 20px;
+            height: 20px;
+            border-radius: 1px;
+            background-color: #f1672c;
+            border-width: 0px ;
+            border-color: #f1672c;
+            border-style: solid;
+            /* box-shadow: 0px 0px 1px #f1672c; */
+                z-index: 98;
+            -webkit-animation: part3Animation 16s ease-in-out infinite;
+        }
+            
+            
+            @-webkit-keyframes part3Animation
+            {
+                0% {-webkit-transform: rotateX(0deg);}
+                18% {-webkit-transform: rotateX(180deg);}
+                25% {-webkit-transform: rotateX(180deg);}
+                43% {-webkit-transform: rotateX(0deg);}
+                50% {-webkit-transform: rotateX(0deg);}
+                51% {-webkit-transform: rotateY(0deg);}
+                68% {-webkit-transform: rotateY(180deg);}
+                75% {-webkit-transform: rotateY(180deg);}
+                93% {-webkit-transform: rotateY(0deg);}
+                100% {-webkit-transform: rotateY(0deg);}
+            }
+            
+            
+            div.btn{
+                float:left;
+                clear: both; 
+                margin: 20px;
+            }
+            
+            .btn>button{
+            color: #666666;
+            width:130px;
+            height: 36px;
+            background-color: #eeeeee;
+            border: solid 1px #bbbbbb;
+            border-radius: 6px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+            }
+            
+            .btn>button:hover{
+            color: #666666;
+            width:130px;
+            height: 36px;
+            background-color: #dddddd;
+            border: solid 1px #aaaaaa;
+            border-radius: 6px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+            }
+            
+            .btn>button:active{
+            color: #666666;
+            width:130px;
+            height: 36px;
+            background-color: #dddddd;
+            border: solid 1px #aaaaaa;
+            border-radius: 6px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+            -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+            }
+            
+            .btn>button:focus{
+            outline: -webkit-focus-ring-color auto 0px;
+            }
+            
+    </style>
+  </head>
+  
+  	
+  <body>
+    <!-- wechat link share thumbnail -->
+    <div id='wx_pic' style='margin:0 auto;display:none;'>
+        <img src='for_wechat.jpg' />
+    </div>
+    <!-- upcoming -->
+    <h1 class="title">A website about <b>“Html/Css/Js”</b> and <b>“UX”</b></h1>
+    <div class="title2"><h2 >Upcoming<span>...</span></h1></div>
+    <div class="container">
+        
+        <div class="part1" >  
+          </div>
+        <div class="part2" >  
+          </div>
+        <div class="part3" >  
+          </div>
+    
+        <!-- 
+<div class="part4" >  
+          </div>
+-->
+    </div>
+      <p class="text">xiehuating@gmail.com</p>
+	  <p class="text linkText" ><a class="link" href="http://www.miitbeian.gov.cn">沪ICP备14024470号-1</a><p>
+      
+<!--   
+<div class="btn">
+      <button type="" class="" id="" onclick="loadedCom()"> Animation </button>
+    </div>
+-->
+
+    
+
+
+    
+  </body>
+</html>
